@@ -1,0 +1,265 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+body {
+      background-color: whitesmoke;
+}
+
+.navbar {
+      width: 100%;
+      height: 80px;
+      background-color: #0082e6;
+      position: fixed;
+      z-index: 10;
+      box-shadow: 0 3px 5px #696565de;
+}
+
+.navbar-logo {
+      float: left;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 80px;
+      margin-left: 100px;
+}
+
+.navbar-list {
+      float: right;
+      margin-right: 100px;
+}
+
+.navbar-list li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 8px;
+}
+
+.item-list {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 7px 13px;
+      text-transform: uppercase;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all ease-in .5s;
+}
+
+.active,
+.item-list:hover {
+      color: #0082e6;
+      background-color: white;
+}
+
+.navbar-button {
+      float: right;
+      line-height: 80px;
+      margin-right: 50px;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      display: none;
+      transition: .5s;
+}
+
+.content {
+      padding-top: 80px;
+}
+
+.main {
+      height: 560px;
+      background-image: url('../img/main-background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+}
+
+.main-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.main-content {
+      width: 60%;
+      text-align: center;
+}
+
+.btn {
+      padding: 15px 20px;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: inline-block;
+}
+
+.btn-team {
+      background-color: #009953;
+      transition: all 0.3s;
+      margin-top: 20px;
+}
+
+.btn-team:hover {
+      background-color: #008842;
+}
+
+.our-team-wrapper {
+      background-color: #f7f7f7;
+      text-align: center;
+      padding: 60px 32px;
+      font-size: 24px;
+}
+
+.our-team-title {
+      display: inline-block;
+      border-bottom: 3px solid #0082e6;
+}
+
+.our-team-list {
+      margin-top: 48px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+}
+
+.our-team-list .col {
+      flex: 0 0 33.3%;
+      padding: 10px;
+      align-items: stretch;
+}
+
+.card {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      background-color: #fff;
+      width:100%;
+      height: 100%;
+      border-radius: 4px;
+      padding: 20px 0;
+      cursor: pointer;
+}
+
+.card:hover {
+      box-shadow: 0 14px 28px rgba(75, 73, 73, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card:hover .profile-picture {
+      border: 4px solid #0082e6;
+}
+
+.card:hover .profile-role {
+      color: #0082e6;
+}
+
+.profile-picture {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+}
+
+.profile-name {
+      margin-top: 16px;
+}
+
+.profile-role {
+      font-size: 18px;
+      color: #c7c7c7;
+}
+
+.footer {
+      background-color: #031d31;
+      padding: 20px 0;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+}
+
+
+.footer-logo {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      border: 3px solid #0082e6;
+}
+
+.copyright-text {
+      margin-top: 16px;
+}
+
+
+@media screen and (max-width: 925px) {
+      .navbar-logo {
+            margin-left: 50px;
+      }
+
+      .navbar-list {
+            position: fixed;
+            width: 100%;
+            height: max-content;
+            background: #02518d;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+      }
+
+      .navbar-list li {
+            display: block;
+      }
+
+      .navbar-button {
+            display: block;
+      }
+
+      .main {
+            height: 460px;
+            background-position: center;
+      }
+
+      .main-content {
+            width: 90%;
+      }
+
+      .our-team-list .col {
+            flex: 0 0 100%;
+      }
+}
+
+@media screen and (max-width: 325px) {
+      .navbar-logo {
+            display: none;
+            color: red;
+      }
+
+      .navbar-button {
+            float: left;
+            margin-left: 30px;
+            margin-right: 0;
+      }
+
+}
+
+
+
